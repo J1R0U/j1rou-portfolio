@@ -1,0 +1,16 @@
+{
+  "name": "j1rou-graphic-designer-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Neobrutalist Graphic Designer Portfolio for Jay'l Gimenez Jr. (J1rou)",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "vite"
+  },
+  "devDependencies": {
+    "vite": "^6.2.0"
+  }
+}

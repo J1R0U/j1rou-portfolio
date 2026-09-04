@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J1ROU // Jay'l Gimenez Jr. — Graphic Designer & Visual Artist</title>
+  <meta name="description" content="Portfolio of Jay'l Gimenez Jr. (J1rou) — Graphic Designer based in Tago, Surigao del Sur with workplace in Tandag City. Specialized in Brand Identity, UI/UX, Editorial & Vector Graphics using Photoshop, Lunacy, Figma, and Illustrator.">
+  <meta name="keywords" content="Jay'l Gimenez Jr, J1rou, Graphic Designer, Tago Surigao del Sur, Tandag City, Neobrutalism Portfolio, Brand Identity, UI UX Design, Editorial Design, Photoshop, Lunacy, Figma, Illustrator">
+  <meta name="author" content="Jay'l Gimenez Jr. (J1rou)">
+
+  <!-- Open Graph / Social Media Meta -->
+  <meta property="og:title" content="J1ROU // Jay'l Gimenez Jr. — Graphic Designer & Visual Artist">
+  <meta property="og:description" content="Graphic design portfolio of Jay'l Gimenez Jr. (J1rou) — based in Tago, Surigao del Sur // Tandag City. Brand identities, editorial prints, packaging, and digital layouts.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Syne, Space Grotesk, Space Mono, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="yellow" class="custom-cursor-enabled">
+
+  <!-- Custom Brutalist Cursor -->
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-outline" id="cursorOutline" aria-hidden="true"></div>
+
+  <!-- Toast Notification Center -->
+  <div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Top Announcement Ticker -->
+  <div class="top-announcement-bar">
+    <div class="ticker-content">
+      <span>★ OPEN FOR DESIGN PROJECTS & ROLES</span>
+      <span>⚡ BRAND IDENTITY • UI/UX • EDITORIAL • PACKAGING</span>
+      <span>★ TAGO, SURIGAO DEL SUR • WORKPLACE: TANDAG CITY</span>
+      <span>⚡ PHOTOSHOP • LUNACY • FIGMA • ILLUSTRATOR</span>
+      <span>★ OPEN FOR DESIGN PROJECTS & ROLES</span>
+      <span>⚡ BRAND IDENTITY • UI/UX • EDITORIAL • PACKAGING</span>
+    </div>
+  </div>
+
+  <!-- Main Navigation Bar -->
+  <header class="navbar-wrapper">
+    <nav class="navbar brutal-box" aria-label="Main Navigation">
+      <a href="#hero" class="brand-logo" id="brandLogo">
+        <div class="logo-badge">J1ROU</div>
+        <div class="logo-sub">
+          <span class="real-name">JAY'L GIMENEZ JR.</span>
+          <span class="role-tag">GRAPHIC DESIGNER</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#works" class="nav-link">WORKS</a></li>
+        <li><a href="#about" class="nav-link">ABOUT & RESUME</a></li>
+        <li><a href="#playground" class="nav-link">PLAYGROUND <span class="badge-pill pulse">NEW</span></a></li>
+        <li><a href="#contact" class="nav-link">CONTACT</a></li>
+      </ul>
+
+      <!-- Controls & CTA -->
+      <div class="nav-actions">
+        <!-- Sound FX Toggle -->
+        <button type="button" class="btn-icon-brutal" id="soundToggle" title="Toggle Sound FX" aria-label="Toggle Sound Effects">
+          <span class="icon-sound" id="soundIcon">🔊</span>
+          <span class="btn-tooltip">SOUND ON</span>
+        </button>
+
+        <!-- Theme Color Switcher -->
+        <div class="theme-dropdown-container">
+          <button type="button" class="btn-icon-brutal" id="themePickerBtn" title="Change Theme Palette" aria-label="Theme Palette Selector">
+            <span class="theme-color-indicator"></span>
+            <span class="btn-tooltip">THEME</span>
+          </button>
+          <div class="theme-menu brutal-box" id="themeMenu">
+            <div class="theme-menu-header">SELECT PALETTE</div>
+            <button class="theme-opt active" data-set-theme="yellow"><span class="swatch yellow"></span> Neo Yellow</button>
+            <button class="theme-opt" data-set-theme="pink"><span class="swatch pink"></span> Cyber Pink</button>
+            <button class="theme-opt" data-set-theme="lime"><span class="swatch lime"></span> Acid Lime</button>
+            <button class="theme-opt" data-set-theme="cyan"><span class="swatch cyan"></span> Electric Cyan</button>
+            <button class="theme-opt" data-set-theme="dark"><span class="swatch dark"></span> Midnight Brutal</button>
+          </div>
+        </div>
+
+        <!-- Hire CTA -->
+        <a href="#contact" class="btn-brutal btn-nav-cta">
+          <span class="btn-text">LET'S TALK</span>
+          <span class="btn-arrow">⚡</span>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button type="button" class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Mobile Menu" aria-expanded="false">
+          <span class="burger-bar"></span>
+          <span class="burger-bar"></span>
+          <span class="burger-bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu Drawer -->
+  <div class="mobile-drawer brutal-box" id="mobileDrawer">
+    <div class="drawer-header">
+      <span class="drawer-title">NAVIGATION</span>
+      <button class="btn-icon-brutal close-drawer-btn" id="closeDrawerBtn" aria-label="Close menu">✕</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="#works" class="mobile-nav-link">SELECTED WORKS</a></li>
+      <li><a href="#about" class="mobile-nav-link">ABOUT & RESUME</a></li>
+      <li><a href="#playground" class="mobile-nav-link">STICKER PLAYGROUND ⚡</a></li>
+      <li><a href="#contact" class="mobile-nav-link">INQUIRY & CONTACT</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <div class="availability-badge">
+        <span class="live-dot"></span> AVAILABLE FOR NEW PROJECTS
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-grid" aria-hidden="true"></div>
+
+      <!-- Floating Badges -->
+      <div class="hero-floating-badges">
+        <div class="badge-sticker sticker-1">★ 100% UNAPOLOGETIC</div>
+        <div class="badge-sticker sticker-2">⚡ VISUAL IDENTITY ARCHITECT</div>
+        <div class="badge-sticker sticker-3">📍 TAGO, SURIGAO DEL SUR • TANDAG CITY</div>
+        <div class="badge-sticker sticker-4">EST. 2026</div>
+      </div>
+
+      <div class="container hero-container">
+        
+        <!-- Left Hero Content -->
+        <div class="hero-content">
+          <div class="hero-status-pill brutal-box">
+            <span class="pulse-indicator"></span>
+            <span class="status-text">AVAILABLE FOR ART DIRECTION & FREELANCE</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="hero-intro">HI, I'M <mark class="highlight-yellow">JAY'L GIMENEZ JR.</mark></span>
+            <span class="hero-alias">KNOWN EVERYWHERE AS <span class="alias-accent">J1ROU</span></span>
+          </h1>
+
+          <p class="hero-manifesto">
+            Graphic designer, visual artist, and brand identity sculptor. I blend <strong>Swiss typography</strong>, <strong>90s acid graphics</strong>, and <strong>high-voltage brutalism</strong> to create brand systems and visual artifacts that cannot be ignored.
+          </p>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-actions">
+            <a href="#works" class="btn-brutal btn-primary" id="heroExploreBtn">
+              <span>EXPLORE WORKS</span>
+              <span class="icon">🚀</span>
+            </a>
+            <a href="#contact" class="btn-brutal btn-secondary" id="heroJamBtn">
+              <span>BOOK A DESIGN JAM</span>
+              <span class="icon">💬</span>
+            </a>
+            <button type="button" class="btn-brutal btn-tertiary" id="quickVibeBtn" title="Randomize Vibe Colors">
+              <span>RANDOMIZE VIBE</span>
+              <span class="icon">🎨</span>
+            </button>
+          </div>
+
+          <!-- Hero Stats Strip -->
+          <div class="hero-stats-grid">
+            <div class="stat-card brutal-box">
+              <div class="stat-num" data-target="80">80+</div>
+              <div class="stat-label">PROJECTS SHIPPED</div>
+            </div>
+            <div class="stat-card brutal-box">
+              <div class="stat-num" data-target="6">6+</div>
+              <div class="stat-label">YEARS CRAFTING</div>
+            </div>
+            <div class="stat-card brutal-box">
+              <div class="stat-num">100%</div>
+              <div class="stat-label">RAW PASSION</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Visual Card -->
+        <div class="hero-visual-card">
+          <div class="retro-window brutal-box">
+            <div class="window-header">
+              <div class="window-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="window-title">J1ROU_CREATIVE_SYSTEM_V2.6.RAW</div>
+              <div class="window-badge">ONLINE</div>
+            </div>
+
+            <div class="window-body">
+              <div class="avatar-image-wrapper">
+                <img src="assets/j1rou_avatar.jpg" alt="Jay'l Gimenez Jr. - J1rou Graphic Designer Avatar" class="avatar-img" id="heroAvatarImg">
+                <div class="avatar-tag-badge">★ J1ROU STUDIO</div>
+                <div class="avatar-corner-sticker">APPROVED</div>
+              </div>
+
+              <div class="window-info-bar">
+                <div class="info-row">
+                  <span class="info-key">NAME:</span>
+                  <span class="info-val">Jay'l Gimenez Jr. (J1rou)</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-key">FROM:</span>
+                  <span class="info-val">Tago, Surigao del Sur</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-key">WORKPLACE:</span>
+                  <span class="info-val highlight-cyan">Tandag City</span>
+                </div>
+                <div class="info-row">
+                  <span class="info-key">WEAPONS:</span>
+                  <span class="info-val">Photoshop • Lunacy • Figma • Illustrator</span>
+                </div>
+              </div>
+
+              <div class="window-footer-cta">
+                <button type="button" class="btn-brutal btn-full" id="dropVibeBtn">
+                  <span>💥 DROP A VIBE STAMP</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MARQUEE TICKER 1 -->
+    <section class="ticker-section" aria-hidden="true">
+      <div class="marquee-track marquee-forward">
+        <div class="marquee-content">
+          <span>★ BRAND IDENTITY SYSTEMS</span>
+          <span>⚡ 3D SURREALISM & KEY VISUALS</span>
+          <span>★ EDITORIAL & MAGAZINE DESIGN</span>
+          <span>⚡ EXPERIMENTAL POSTER CULTURE</span>
+          <span>★ PACKAGING & MERCHANDISE</span>
+          <span>⚡ UI/UX ART DIRECTION</span>
+          <span>★ TYPOGRAPHIC CHAOS</span>
+          <span>★ BRAND IDENTITY SYSTEMS</span>
+          <span>⚡ 3D SURREALISM & KEY VISUALS</span>
+          <span>★ EDITORIAL & MAGAZINE DESIGN</span>
+          <span>⚡ EXPERIMENTAL POSTER CULTURE</span>
+          <span>★ PACKAGING & MERCHANDISE</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELECTED WORKS SECTION -->
+    <section class="works-section" id="works">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header">
+          <div class="section-badge brutal-box">SELECTED PORTFOLIO</div>
+          <h2 class="section-title">FEATURED <mark class="highlight-pink">PROJECTS</mark> & VISUAL EXPERIMENTS</h2>
+          <p class="section-desc">Handcrafted graphic identities, editorial prints, 3D visual environments, and bespoke packaging built for culture-defining brands.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-wrapper">
+          <div class="filter-tabs brutal-box" role="tablist" aria-label="Portfolio Categories">
+            <button type="button" class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
+              <span>ALL WORKS</span>
+              <span class="count-pill">6</span>
+            </button>
+            <button type="button" class="filter-btn" data-filter="branding" role="tab" aria-selected="false">
+              <span>BRAND IDENTITY</span>
+              <span class="count-pill">2</span>
+            </button>
+            <button type="button" class="filter-btn" data-filter="editorial" role="tab" aria-selected="false">
+              <span>EDITORIAL / PRINT</span>
+              <span class="count-pill">1</span>
+            </button>
+            <button type="button" class="filter-btn" data-filter="packaging" role="tab" aria-selected="false">
+              <span>PACKAGING</span>
+              <span class="count-pill">2</span>
+            </button>
+            <button type="button" class="filter-btn" data-filter="3d" role="tab" aria-selected="false">
+              <span>3D & POSTER</span>
+              <span class="count-pill">2</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Works Grid -->
+        <div class="works-grid" id="worksGrid">
+
+          <!-- Project 1: Hyperdrive Magazine -->
+          <article class="work-card brutal-box" data-category="editorial" data-project-id="hyperdrive">
+            <div class="card-ribbon">FEATURED ISSUE</div>
+            <div class="card-media-wrapper">
+              <img src="assets/hyperdrive_magazine.jpg" alt="Hyperdrive Magazine Editorial Design by J1rou" class="work-img" loading="lazy">
+              <div class="media-overlay">
+                <button type="button" class="btn-brutal btn-view-case" data-project="hyperdrive">
+                  <span>VIEW CASE STUDY</span> 👁️
+                </button>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="cat-tag tag-editorial">EDITORIAL / PRINT</span>
+                <span class="year-tag">2026</span>
+              </div>
+              <h3 class="card-title">HYPERDRIVE MAGAZINE</h3>
+              <p class="card-excerpt">Experimental cyber-editorial publication blending Swiss typography, dystopian collages, and raw print production.</p>
+              
+              <div class="card-footer">
+                <button type="button" class="like-btn" data-project="hyperdrive" title="Appreciate project" aria-label="Like Hyperdrive Magazine project">
+                  <span class="like-heart">🖤</span>
+                  <span class="like-count">142</span>
+                </button>
+                <button type="button" class="btn-text-action" data-project="hyperdrive">
+                  CASE STUDY →
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Aura Cosmetics -->
+          <article class="work-card brutal-box" data-category="packaging" data-project-id="aura">
+            <div class="card-ribbon ribbon-green">ECO LUXURY</div>
+            <div class="card-media-wrapper">
+              <img src="assets/aura_cosmetics.jpg" alt="Aura Botanicals Luxury Packaging Design by J1rou" class="work-img" loading="lazy">
+              <div class="media-overlay">
+                <button type="button" class="btn-brutal btn-view-case" data-project="aura">
+                  <span>VIEW CASE STUDY</span> 👁️
+                </button>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="cat-tag tag-packaging">PACKAGING & IDENTITY</span>
+                <span class="year-tag">2025</span>
+              </div>
+              <h3 class="card-title">AURA BOTANICALS</h3>
+              <p class="card-excerpt">High-end sustainable skincare packaging system with embossed brutalist dielines and custom organic geometric logotype.</p>
+              
+              <div class="card-footer">
+                <button type="button" class="like-btn" data-project="aura" title="Appreciate project" aria-label="Like Aura Botanicals project">
+                  <span class="like-heart">🖤</span>
+                  <span class="like-count">98</span>
+                </button>
+                <button type="button" class="btn-text-action" data-project="aura">
+                  CASE STUDY →
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Neon Branding -->
+          <article class="work-card brutal-box" data-category="branding" data-project-id="neon">
+            <div class="card-ribbon ribbon-pink">BEST IDENTITY</div>
+            <div class="card-media-wrapper">
+              <img src="assets/neon_branding.jpg" alt="Neon Overdrive Cyber Brand Identity by J1rou" class="work-img" loading="lazy">
+              <div class="media-overlay">
+                <button type="button" class="btn-brutal btn-view-case" data-project="neon">
+                  <span>VIEW CASE STUDY</span> 👁️
+                </button>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="cat-tag tag-branding">BRAND IDENTITY</span>
+                <span class="year-tag">2026</span>
+              </div>
+              <h3 class="card-title">NEON OVERDRIVE</h3>
+              <p class="card-excerpt">Full comprehensive brand ecosystem, custom kinetic typography, apparel collection, and digital design system for a nightlife collective.</p>
+              
+              <div class="card-footer">
+                <button type="button" class="like-btn" data-project="neon" title="Appreciate project" aria-label="Like Neon Overdrive project">
+                  <span class="like-heart">🖤</span>
+                  <span class="like-count">215</span>
+                </button>
+                <button type="button" class="btn-text-action" data-project="neon">
+                  CASE STUDY →
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Synapse Poster -->
+          <article class="work-card brutal-box" data-category="3d" data-project-id="synapse">
+            <div class="card-ribbon">LIMITED RUN</div>
+            <div class="card-media-wrapper">
+              <img src="assets/synapse_poster.jpg" alt="Synapse Sonic Lab Poster Design by J1rou" class="work-img" loading="lazy">
+              <div class="media-overlay">
+                <button type="button" class="btn-brutal btn-view-case" data-project="synapse">
+                  <span>VIEW CASE STUDY</span> 👁️
+                </button>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="cat-tag tag-3d">POSTER ART & AUDIO</span>
+                <span class="year-tag">2025</span>
+              </div>
+              <h3 class="card-title">SYNAPSE SOUND SYSTEM</h3>
+              <p class="card-excerpt">Avant-garde silkscreen poster series exploring auditory frequencies, brutalist grid breaks, and high-contrast typographic hierarchy.</p>
+              
+              <div class="card-footer">
+                <button type="button" class="like-btn" data-project="synapse" title="Appreciate project" aria-label="Like Synapse project">
+                  <span class="like-heart">🖤</span>
+                  <span class="like-count">187</span>
+                </button>
+                <button type="button" class="btn-text-action" data-project="synapse">
+                  CASE STUDY →
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Chrono Vinyl Records -->
+          <article class="work-card brutal-box" data-category="packaging" data-project-id="chrono">
+            <div class="card-ribbon ribbon-yellow">ALBUM ART</div>
+            <div class="card-media-wrapper">
+              <img src="assets/chrono_vinyl.jpg" alt="Chrono Vinyl Album Packaging by J1rou" class="work-img" loading="lazy">
+              <div class="media-overlay">
+                <button type="button" class="btn-brutal btn-view-case" data-project="chrono">
+                  <span>VIEW CASE STUDY</span> 👁️
+                </button>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="cat-tag tag-packaging">VINYL PACKAGING / MERCH</span>
+                <span class="year-tag">2024</span>
+              </div>
+              <h3 class="card-title">CHRONO TIMELESS SOUNDS</h3>
+              <p class="card-excerpt">Deluxe vinyl record sleeve, iridescent foil stamping, inner gatefold booklet, and physical merchandise design for synthwave label.</p>
+              
+              <div class="card-footer">
+                <button type="button" class="like-btn" data-project="chrono" title="Appreciate project" aria-label="Like Chrono Vinyl project">
+                  <span class="like-heart">🖤</span>
+                  <span class="like-count">164</span>
+                </button>
+                <button type="button" class="btn-text-action" data-project="chrono">
+                  CASE STUDY →
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6: Kinetic 3D World -->
+          <article class="work-card brutal-box" data-category="3d branding" data-project-id="kinetic">
+            <div class="card-ribbon ribbon-cyan">3D VISUALS</div>
+            <div class="card-media-wrapper">
+              <img src="assets/kinetic_3d.jpg" alt="Kinetic Dimensions 3D Visuals by J1rou" class="work-img" loading="lazy">
+              <div class="media-overlay">
+                <button type="button" class="btn-brutal btn-view-case" data-project="kinetic">
+                  <span>VIEW CASE STUDY</span> 👁️
+                </button>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="cat-tag tag-3d">3D SPATIAL & MOTION</span>
+                <span class="year-tag">2026</span>
+              </div>
+              <h3 class="card-title">KINETIC DIMENSIONS</h3>
+              <p class="card-excerpt">Abstract surrealist 3D key visuals, material exploration, glassmorphic refraction textures, and spatial brand hero assets.</p>
+              
+              <div class="card-footer">
+                <button type="button" class="like-btn" data-project="kinetic" title="Appreciate project" aria-label="Like Kinetic Dimensions project">
+                  <span class="like-heart">🖤</span>
+                  <span class="like-count">310</span>
+                </button>
+                <button type="button" class="btn-text-action" data-project="kinetic">
+                  CASE STUDY →
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Custom Request Banner -->
+        <div class="works-cta-banner brutal-box">
+          <div class="banner-left">
+            <h4 class="banner-title">HAVE A SPECIFIC VISION OR CUSTOM BRIEF?</h4>
+            <p class="banner-subtitle">From one-off festival posters to multi-channel brand overhauls, let's create something radical.</p>
+          </div>
+          <div class="banner-right">
+            <a href="#contact" class="btn-brutal btn-primary">
+              <span>START A PROJECT</span> ⚡
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CASE STUDY MODAL (DIALOG) -->
+    <dialog class="case-study-modal brutal-box" id="caseStudyModal" aria-labelledby="modalProjectTitle">
+      <div class="modal-window-bar">
+        <div class="window-dots">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+        <span class="modal-window-title" id="modalWindowTitle">PROJECT_DEEPDIVE.RAW</span>
+        <button type="button" class="btn-icon-brutal modal-close-btn" id="closeModalBtn" aria-label="Close Case Study">✕</button>
+      </div>
+
+      <div class="modal-scroll-body">
+        
+        <!-- Modal Hero Image -->
+        <div class="modal-hero-frame">
+          <img src="" alt="Project Showcase" class="modal-hero-img" id="modalHeroImg">
+          <div class="modal-badge-float" id="modalCategoryBadge">CATEGORY</div>
+        </div>
+
+        <!-- Modal Header Info -->
+        <div class="modal-header-section">
+          <div class="modal-meta-strip">
+            <div class="meta-item">
+              <span class="meta-label">CLIENT</span>
+              <span class="meta-val" id="modalClient">Client Name</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">TIMELINE</span>
+              <span class="meta-val" id="modalTimeline">4 Weeks</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">ROLE</span>
+              <span class="meta-val" id="modalRole">Lead Graphic Designer</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">TOOLS</span>
+              <span class="meta-val" id="modalTools">Photoshop, Illustrator, Blender</span>
+            </div>
+          </div>
+
+          <h2 class="modal-title" id="modalProjectTitle">PROJECT TITLE</h2>
+          <p class="modal-tagline" id="modalProjectTagline">A quick one-line summary of what this project accomplished.</p>
+        </div>
+
+        <!-- Modal Content Breakdown -->
+        <div class="modal-content-grid">
+          
+          <!-- Column Left: Challenge & Solution -->
+          <div class="modal-col-main">
+            <div class="modal-card-block brutal-box">
+              <h4 class="block-title">⚡ THE CHALLENGE</h4>
+              <p class="block-text" id="modalChallengeText">Challenge description goes here.</p>
+            </div>
+
+            <div class="modal-card-block brutal-box">
+              <h4 class="block-title">🚀 CREATIVE DIRECTION & EXECUTION</h4>
+              <p class="block-text" id="modalSolutionText">Solution and artistic execution details.</p>
+            </div>
+
+            <div class="modal-card-block brutal-box quote-block">
+              <div class="quote-icon">“</div>
+              <p class="quote-text" id="modalClientQuote">"Jay'l delivered an identity that completely redefined our brand standing in the underground space."</p>
+              <span class="quote-author" id="modalQuoteAuthor">— Creative Director</span>
+            </div>
+          </div>
+
+          <!-- Column Right: Visual Assets & System Specs -->
+          <div class="modal-col-side">
+            
+            <!-- Color Palette Swatches -->
+            <div class="modal-card-block brutal-box">
+              <h4 class="block-title">🎨 COLOR PALETTE</h4>
+              <div class="swatches-grid" id="modalSwatchesGrid">
+                <!-- Injected dynamically -->
+              </div>
+              <small class="swatch-hint">Click swatch to copy HEX code</small>
+            </div>
+
+            <!-- Deliverables Checklist -->
+            <div class="modal-card-block brutal-box">
+              <h4 class="block-title">📦 KEY DELIVERABLES</h4>
+              <ul class="deliverables-list" id="modalDeliverablesList">
+                <!-- Injected dynamically -->
+              </ul>
+            </div>
+
+            <!-- Typography Pairing -->
+            <div class="modal-card-block brutal-box">
+              <h4 class="block-title">🔤 TYPE SYSTEM</h4>
+              <div class="type-spec" id="modalTypeSpec">
+                <div class="type-row">
+                  <span class="type-role">DISPLAY:</span>
+                  <span class="type-name" id="modalDisplayFont">Syne 900</span>
+                </div>
+                <div class="type-row">
+                  <span class="type-role">BODY & ACCENT:</span>
+                  <span class="type-name" id="modalBodyFont">Space Mono</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Modal Footer Actions -->
+        <div class="modal-footer-actions">
+          <button type="button" class="btn-brutal btn-secondary" id="modalBackBtn">← BACK TO GALLERY</button>
+          <a href="#contact" class="btn-brutal btn-primary" id="modalInquireBtn">INQUIRE SIMILAR PROJECT 💬</a>
+        </div>
+
+      </div>
+    </dialog>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-badge brutal-box">BEHIND THE CANVASES</div>
+          <h2 class="section-title">THE DESIGN <mark class="highlight-yellow">MANIFESTO</mark> & ARSENAL</h2>
+          <p class="section-desc">Who is Jay'l Gimenez Jr.? The background, creative obsession, and tools behind the alias J1rou.</p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- About Manifesto Card -->
+          <div class="about-card-manifesto brutal-box">
+            <div class="card-tag">THE PHILOSOPHY</div>
+            <h3 class="manifesto-heading">“SAFE DESIGN IS THE MOST DANGEROUS THING A BRAND CAN DO.”</h3>
+            
+            <p class="manifesto-paragraph">
+              Originally from <strong>Tago, Surigao del Sur</strong> with my creative workplace in <strong>Tandag City</strong>, I'm <strong>Jay'l Gimenez Jr.</strong> (known in the design realm as <strong>J1rou</strong>). I got my start tearing through bold design magazines, underground music posters, and street culture graphics.
+            </p>
+
+            <p class="manifesto-paragraph">
+              Today, I build visual identities, UI/UX interfaces, and graphic collateral that refuse to blend into sterile corporate beige. My work is high-energy, heavy on tactile typography, sharp contrast, and purposeful rebellion.
+            </p>
+
+            <div class="manifesto-pillars">
+              <div class="pillar-item">
+                <span class="pillar-icon">⚡</span>
+                <div class="pillar-text">
+                  <strong>High Voltage Contrast</strong>
+                  <span>Every layout must have an undeniable visual anchor.</span>
+                </div>
+              </div>
+              <div class="pillar-item">
+                <span class="pillar-icon">📐</span>
+                <div class="pillar-text">
+                  <strong>Precision Meets Rebel Energy</strong>
+                  <span>Master the layout grid first, then push boundaries with intention.</span>
+                </div>
+              </div>
+              <div class="pillar-item">
+                <span class="pillar-icon">🧪</span>
+                <div class="pillar-text">
+                  <strong>Tactile Materiality</strong>
+                  <span>Texture, grain, sharp vectors, and depth in every digital canvas.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="manifesto-actions">
+              <a href="#contact" class="btn-brutal btn-primary">START A PROJECT WITH J1ROU →</a>
+              <button type="button" class="btn-brutal btn-secondary" id="downloadDeckBtn">
+                <span>DOWNLOAD RESUME / CV</span> 📄
+              </button>
+            </div>
+          </div>
+
+          <!-- Right: Arsenal & Skills -->
+          <div class="about-card-arsenal">
+            
+            <!-- Skill Mastery Meters -->
+            <div class="arsenal-block brutal-box">
+              <div class="block-head">
+                <span class="block-badge">DISCIPLINES</span>
+                <h4>CORE CAPABILITIES</h4>
+              </div>
+
+              <div class="skill-meters-list">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span>Brand Identity & Systems</span>
+                    <span class="skill-pct">98%</span>
+                  </div>
+                  <div class="progress-track brutal-box">
+                    <div class="progress-fill fill-yellow" style="width: 98%;"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span>UI/UX & Digital Layout (Figma & Lunacy)</span>
+                    <span class="skill-pct">95%</span>
+                  </div>
+                  <div class="progress-track brutal-box">
+                    <div class="progress-fill fill-cyan" style="width: 95%;"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span>Vector Graphics & Custom Lettering (Illustrator)</span>
+                    <span class="skill-pct">96%</span>
+                  </div>
+                  <div class="progress-track brutal-box">
+                    <div class="progress-fill fill-pink" style="width: 96%;"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span>Photo Manipulation & Raster Art (Photoshop)</span>
+                    <span class="skill-pct">97%</span>
+                  </div>
+                  <div class="progress-track brutal-box">
+                    <div class="progress-fill fill-orange" style="width: 97%;"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span>Packaging, Posters & Print Production</span>
+                    <span class="skill-pct">93%</span>
+                  </div>
+                  <div class="progress-track brutal-box">
+                    <div class="progress-fill fill-lime" style="width: 93%;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Software Stack -->
+            <div class="arsenal-block brutal-box">
+              <div class="block-head">
+                <span class="block-badge">TOOLS</span>
+                <h4>WEAPONS OF CHOICE</h4>
+              </div>
+
+              <div class="tool-badges-grid">
+                <div class="tool-badge">
+                  <svg class="tool-badge-icon" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="4" fill="#001E36"/><text x="4" y="17" fill="#31A8FF" font-family="system-ui, sans-serif" font-weight="900" font-size="12">Ps</text></svg>
+                  <span>Adobe Photoshop</span>
+                </div>
+                <div class="tool-badge">
+                  <svg class="tool-badge-icon" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="4" fill="#1C1836"/><path d="M12 3L20 8.5V15.5L12 21L4 15.5V8.5L12 3Z" fill="#C448FD"/><path d="M12 7L16.5 10.5V14.5L12 18L7.5 14.5V10.5L12 7Z" fill="#00F0FF"/></svg>
+                  <span>Icons8 Lunacy</span>
+                </div>
+                <div class="tool-badge">
+                  <svg class="tool-badge-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 24c2.2 0 4-1.8 4-4v-4H8c-2.2 0-4 1.8-4 4s1.8 4 4 4z" fill="#0ACF83"/><path d="M4 12c0-2.2 1.8-4 4-4h4v8H8c-2.2 0-4-1.8-4-4z" fill="#A259FF"/><path d="M4 4c0-2.2 1.8-4 4-4h4v8H8C5.8 8 4 6.2 4 4z" fill="#F24E1E"/><path d="M12 0h4c2.2 0 4 1.8 4 4s-1.8 4-4 4h-4V0z" fill="#FF7262"/><path d="M20 12c0 2.2-1.8 4-4 4s-4-1.8-4-4 1.8-4 4-4 4 1.8 4 4z" fill="#1ABCFE"/></svg>
+                  <span>Figma</span>
+                </div>
+                <div class="tool-badge">
+                  <svg class="tool-badge-icon" viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="4" fill="#330000"/><text x="5" y="17" fill="#FF9A00" font-family="system-ui, sans-serif" font-weight="900" font-size="12">Ai</text></svg>
+                  <span>Adobe Illustrator</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Career Milestones -->
+            <div class="arsenal-block brutal-box">
+              <div class="block-head">
+                <span class="block-badge">TIMELINE</span>
+                <h4>TRACK RECORD</h4>
+              </div>
+
+              <div class="timeline-list">
+                <div class="timeline-entry">
+                  <span class="timeline-year">2024 — PRESENT</span>
+                  <div class="timeline-detail">
+                    <strong>Lead Graphic Designer & Art Director</strong>
+                    <span>J1ROU Studio // Brand Identity, UI/UX & Visual Systems</span>
+                  </div>
+                </div>
+                <div class="timeline-entry">
+                  <span class="timeline-year">2022 — 2024</span>
+                  <div class="timeline-detail">
+                    <strong>Senior Graphic Designer</strong>
+                    <span>Workplace: Tandag City, Surigao del Sur // Branding & Digital Media</span>
+                  </div>
+                </div>
+                <div class="timeline-entry">
+                  <span class="timeline-year">2020 — 2022</span>
+                  <div class="timeline-detail">
+                    <strong>Visual Identity & Print Specialist</strong>
+                    <span>Tago & Tandag Creative Collaborative // Print & Vector Graphics</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- INTERACTIVE STICKER PLAYGROUND -->
+    <section class="playground-section" id="playground">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-badge brutal-box">INTERACTIVE LAB</div>
+          <h2 class="section-title">THE STICKER <mark class="highlight-lime">PLAYGROUND</mark></h2>
+          <p class="section-desc">Create your own custom brutalist composition. Stamp badges, drag, rotate, resize, and export your personal J1rou poster!</p>
+        </div>
+
+        <div class="playground-layout brutal-box">
+          
+          <!-- Playground Controls Sidebar -->
+          <div class="playground-sidebar">
+            <div class="sidebar-header">
+              <h4>STICKER VAULT</h4>
+              <span class="sidebar-tip">Click to stamp onto canvas</span>
+            </div>
+
+            <div class="stickers-tray" id="stickersTray">
+              <button type="button" class="stamp-btn" data-sticker-type="approved">
+                <span class="sticker-chip chip-approved">★ APPROVED</span>
+              </button>
+              <button type="button" class="stamp-btn" data-sticker-type="raw">
+                <span class="sticker-chip chip-raw">100% RAW</span>
+              </button>
+              <button type="button" class="stamp-btn" data-sticker-type="riot">
+                <span class="sticker-chip chip-riot">DESIGN RIOT ⚡</span>
+              </button>
+              <button type="button" class="stamp-btn" data-sticker-type="warning">
+                <span class="sticker-chip chip-warning">⚠️ HIGH VOLTAGE</span>
+              </button>
+              <button type="button" class="stamp-btn" data-sticker-type="j1rou">
+                <span class="sticker-chip chip-j1rou">J1ROU_2026</span>
+              </button>
+              <button type="button" class="stamp-btn" data-sticker-type="smiley">
+                <span class="sticker-chip chip-smiley">😎 ACID SMILE</span>
+              </button>
+              <button type="button" class="stamp-btn" data-sticker-type="star">
+                <span class="sticker-chip chip-star">✦ BRUTAL STAR</span>
+              </button>
+              <button type="button" class="stamp-btn" data-sticker-type="barcode">
+                <span class="sticker-chip chip-barcode">||| |||| || ||| 9901</span>
+              </button>
+            </div>
+
+            <!-- Canvas Background Color Selector -->
+            <div class="canvas-color-control">
+              <label class="control-label">CANVAS BACKDROP:</label>
+              <div class="canvas-colors-row">
+                <button type="button" class="btn-canvas-color active" data-canvas-bg="yellow" style="background:#FFE600;" title="Yellow"></button>
+                <button type="button" class="btn-canvas-color" data-canvas-bg="pink" style="background:#FF2A85;" title="Pink"></button>
+                <button type="button" class="btn-canvas-color" data-canvas-bg="lime" style="background:#00FF66;" title="Lime"></button>
+                <button type="button" class="btn-canvas-color" data-canvas-bg="cyan" style="background:#00F0FF;" title="Cyan"></button>
+                <button type="button" class="btn-canvas-color" data-canvas-bg="dark" style="background:#121212;" title="Dark"></button>
+                <button type="button" class="btn-canvas-color" data-canvas-bg="grid" style="background:#FFF;" title="White Grid"></button>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="playground-actions">
+              <button type="button" class="btn-brutal btn-full btn-primary" id="exportCanvasBtn">
+                <span>EXPORT POSTER (.PNG)</span> 💾
+              </button>
+              <button type="button" class="btn-brutal btn-full btn-secondary" id="clearCanvasBtn">
+                <span>CLEAR BOARD</span> 🧹
+              </button>
+            </div>
+          </div>
+
+          <!-- The Interactive Canvas Area -->
+          <div class="playground-board-wrapper">
+            <div class="board-top-bar">
+              <div class="window-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="board-title">POSTER_COMPOSITION_CANVAS.PSD (DRAGGABLE)</span>
+              <span class="board-hint">💡 Drag stickers to position them</span>
+            </div>
+
+            <div class="sticker-board" id="stickerBoard" data-bg="yellow">
+              <!-- Initial Default Stickers on Canvas -->
+              <div class="placed-sticker" style="top: 15%; left: 10%; transform: rotate(-6deg);" data-id="init-1">
+                <div class="sticker-chip chip-j1rou">J1ROU CRAFTED</div>
+                <button class="remove-sticker-btn" title="Remove">✕</button>
+              </div>
+
+              <div class="placed-sticker" style="top: 25%; left: 55%; transform: rotate(8deg);" data-id="init-2">
+                <div class="sticker-chip chip-approved">★ APPROVED 2026</div>
+                <button class="remove-sticker-btn" title="Remove">✕</button>
+              </div>
+
+              <div class="placed-sticker" style="top: 60%; left: 20%; transform: rotate(-3deg);" data-id="init-3">
+                <div class="sticker-chip chip-warning">⚠️ WARNING: DO NOT TOUCH</div>
+                <button class="remove-sticker-btn" title="Remove">✕</button>
+              </div>
+
+              <div class="placed-sticker" style="top: 55%; left: 65%; transform: rotate(12deg);" data-id="init-4">
+                <div class="sticker-chip chip-raw">100% UNFILTERED</div>
+                <button class="remove-sticker-btn" title="Remove">✕</button>
+              </div>
+
+              <!-- Center Watermark -->
+              <div class="board-watermark" aria-hidden="true">
+                <div class="watermark-huge">J1ROU</div>
+                <div class="watermark-sub">JAY'L GIMENEZ JR. // GRAPHIC DESIGN SYSTEM</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials-section">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-badge brutal-box">COMMUNITY LOVE</div>
+          <h2 class="section-title">WHAT COLLABORATORS <mark class="highlight-pink">SAY</mark></h2>
+        </div>
+
+        <div class="testimonials-grid">
+          
+          <div class="testimonial-card brutal-box">
+            <div class="t-stars">★★★★★</div>
+            <p class="t-text">“Jay'l (J1rou) transformed our underground music festival branding from basic flyers into an iconic visual identity that sold out all tickets in 48 hours.”</p>
+            <div class="t-author">
+              <div class="t-avatar avatar-1">⚡</div>
+              <div class="t-info">
+                <strong>MARCUS VANCE</strong>
+                <span>Creative Director, Sub-Bass Records</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card brutal-box">
+            <div class="t-stars">★★★★★</div>
+            <p class="t-text">“His ability to merge raw brutalist energy with clean, luxurious packaging precision is unmatched. Aura Botanicals wouldn't have our current retail presence without J1rou.”</p>
+            <div class="t-author">
+              <div class="t-avatar avatar-2">🌿</div>
+              <div class="t-info">
+                <strong>ELENA ROSTOVA</strong>
+                <span>Founder, Aura Lab Skincare</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card brutal-box">
+            <div class="t-stars">★★★★★</div>
+            <p class="t-text">“Fast turnarounds, zero corporate fluff, and pure artistic courage. J1rou is our go-to visual artist for all key visual campaigns.”</p>
+            <div class="t-author">
+              <div class="t-avatar avatar-3">🔥</div>
+              <div class="t-info">
+                <strong>KAI TAKAHASHI</strong>
+                <span>Art Director, Cyber Syndicate Tokyo</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT & INQUIRY SECTION -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        
+        <div class="section-header">
+          <div class="section-badge brutal-box">GET IN TOUCH</div>
+          <h2 class="section-title">LET'S BUILD SOMETHING <mark class="highlight-yellow">ICONIC</mark></h2>
+          <p class="section-desc">Got a project, collaboration, or crazy idea? Fill out the brief below or hit the direct links.</p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Form Card -->
+          <div class="contact-form-card brutal-box">
+            <div class="form-window-bar">
+              <div class="window-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <span class="form-window-title">PROJECT_INQUIRY_FORM.RAW</span>
+            </div>
+
+            <form class="inquiry-form" id="inquiryForm" novalidate>
+              
+              <!-- Name & Email Row -->
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="userName" class="brutal-label">YOUR NAME / BRAND *</label>
+                  <input type="text" id="userName" name="name" class="brutal-input" placeholder="e.g. Alex Rivera" required>
+                  <span class="form-error" id="nameError"></span>
+                </div>
+                <div class="form-group">
+                  <label for="userEmail" class="brutal-label">YOUR EMAIL ADDRESS *</label>
+                  <input type="email" id="userEmail" name="email" class="brutal-input" placeholder="e.g. alex@brand.com" required>
+                  <span class="form-error" id="emailError"></span>
+                </div>
+              </div>
+
+              <!-- Service Multi-Select Pills -->
+              <div class="form-group">
+                <label class="brutal-label">PROJECT SCOPE (SELECT ALL THAT APPLY) *</label>
+                <div class="service-pills-selector" id="servicePills">
+                  <button type="button" class="scope-pill active" data-value="Brand Identity">✦ Brand Identity</button>
+                  <button type="button" class="scope-pill" data-value="Packaging & Merch">📦 Packaging / Merch</button>
+                  <button type="button" class="scope-pill" data-value="Editorial & Posters">📜 Posters / Editorial</button>
+                  <button type="button" class="scope-pill" data-value="3D & Motion">🧊 3D Visuals</button>
+                  <button type="button" class="scope-pill" data-value="Full Art Direction">🚀 Full Art Direction</button>
+                </div>
+              </div>
+
+              <!-- Budget Range Slider -->
+              <div class="form-group">
+                <div class="slider-label-row">
+                  <label for="budgetSlider" class="brutal-label">ESTIMATED BUDGET</label>
+                  <span class="budget-display brutal-box" id="budgetDisplay">$2,500 – $5,000</span>
+                </div>
+                <input type="range" id="budgetSlider" min="1" max="5" value="3" class="brutal-range" aria-label="Budget Range">
+                <div class="range-ticks">
+                  <span>&lt; $1K</span>
+                  <span>$1K–$2.5K</span>
+                  <span>$2.5K–$5K</span>
+                  <span>$5K–$10K</span>
+                  <span>$10K+</span>
+                </div>
+              </div>
+
+              <!-- Project Brief Message -->
+              <div class="form-group">
+                <label for="userMessage" class="brutal-label">PROJECT BRIEF & DETAILS *</label>
+                <textarea id="userMessage" name="message" rows="4" class="brutal-textarea" placeholder="Tell me about your brand, deadlines, inspirations, and what you're looking to achieve..." required></textarea>
+                <span class="form-error" id="messageError"></span>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn-brutal btn-full btn-primary btn-submit" id="submitBtn">
+                <span class="btn-text">SEND PROJECT INQUIRY 🚀</span>
+                <span class="btn-spinner" aria-hidden="true"></span>
+              </button>
+
+            </form>
+
+            <!-- Success State Box (Hidden by default) -->
+            <div class="form-success-state brutal-box" id="formSuccessState" style="display: none;">
+              <div class="success-icon">🎉</div>
+              <h3 class="success-title">INQUIRY DISPATCHED!</h3>
+              <p class="success-desc">Your project brief has been formatted for <strong>jazztice13jay@gmail.com</strong>. If your email client did not open automatically, click below:</p>
+              <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-top: 16px;">
+                <a href="mailto:jazztice13jay@gmail.com" id="directMailtoBtn" class="btn-brutal btn-yellow" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">
+                  <span>OPEN IN EMAIL CLIENT ✉️</span>
+                </a>
+                <button type="button" class="btn-brutal btn-secondary" id="resetFormBtn">SEND ANOTHER BRIEF 💬</button>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Direct Info & Fast Actions Column -->
+          <div class="contact-info-col">
+            
+            <!-- Quick Email Card -->
+            <div class="direct-contact-card brutal-box">
+              <div class="card-tag">FASTEST ROUTE</div>
+              <h4 class="direct-title">DIRECT INBOX</h4>
+              <p class="direct-desc">Prefer regular email? Click below to copy or write directly to my inbox.</p>
+              
+              <button type="button" class="btn-brutal btn-full btn-copy-email" id="copyEmailBtn" data-email="jazztice13jay@gmail.com">
+                <span class="copy-icon">📋</span>
+                <span class="email-text">jazztice13jay@gmail.com</span>
+                <span class="copy-badge">CLICK TO COPY</span>
+              </button>
+
+              <div class="direct-row-alt">
+                <span>Direct Mail:</span>
+                <a href="mailto:jazztice13jay@gmail.com" style="color: inherit; text-decoration: underline; font-weight: 700;"><strong>jazztice13jay@gmail.com ↗</strong></a>
+              </div>
+            </div>
+
+            <!-- Fast Call Booking Card -->
+            <div class="direct-contact-card brutal-box card-call">
+              <div class="card-tag">QUICK CHAT</div>
+              <h4 class="direct-title">15-MIN DISCOVERY JAM</h4>
+              <p class="direct-desc">Want to jump straight on a call to talk through your moodboards and scope?</p>
+              <button type="button" class="btn-brutal btn-full btn-yellow" id="bookCallBtn">
+                <span>SCHEDULE DISCOVERY CALL ⚡</span>
+              </button>
+            </div>
+
+            <!-- Social Matrix -->
+            <div class="direct-contact-card brutal-box">
+              <div class="card-tag">NETWORK</div>
+              <h4 class="direct-title">CONNECT WITH J1ROU</h4>
+              <div class="social-links-grid">
+                <a href="https://www.behance.net/jaylgimenez" target="_blank" rel="noopener noreferrer" class="social-btn brutal-box" aria-label="J1rou on Behance">
+                  <svg class="soc-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-4.074 0-5.625-3.078-5.625-5.918 0-3.328 1.942-6.082 5.625-6.082 3.86 0 5.289 2.766 5.289 5.375 0 .61-.06 1.125-.098 1.344h-8.086c.09 1.766 1.055 3.328 3.094 3.328 1.488 0 2.375-.766 2.898-1.547l2.003.5zm-5.223-5.469c-.066-1.391-.84-2.453-2.422-2.453-1.637 0-2.375 1.109-2.488 2.453h4.91zm-12.503-6.531h5.816c2.094 0 3.684.516 4.383 1.875.465.906.516 2.031.141 3.031-.563 1.5-2.031 2.063-2.031 2.063 1.547.469 2.594 1.734 2.594 3.469 0 2.406-1.891 4.563-5.328 4.563h-5.575v-15zm3.172 6.094h2.203c1.234 0 1.969-.547 1.969-1.469 0-.891-.703-1.375-1.922-1.375h-2.25v2.844zm0 5.672h2.516c1.375 0 2.219-.609 2.219-1.641 0-1.047-.844-1.625-2.188-1.625h-2.547v3.266z"/></svg>
+                  <span>BEHANCE</span>
+                </a>
+                <a href="https://dribbble.com/jayl-jirou-gimenez" target="_blank" rel="noopener noreferrer" class="social-btn brutal-box" aria-label="J1rou on Dribbble">
+                  <svg class="soc-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm10.189 11.476c-.027-.001-2.709-.104-5.391.731-.19-.413-.391-.829-.604-1.244 3.09-1.354 4.316-3.149 4.377-3.242 1.012 1.096 1.618 2.553 1.618 4.155 0-.134 0-.267 0-.4zm-3.08-5.309c-.068.093-1.234 1.666-4.148 2.946-1.309-2.39-2.738-4.382-2.884-4.584 1.838-.724 3.864-.693 5.662.115-.558.497-1.044.97-1.47 1.413 1.054.025 2.052.072 2.84.11zm-8.814-3.693c.144.198 1.583 2.193 2.894 4.577-3.832 1.134-7.536 1.134-7.859 1.133.916-2.52 2.766-4.598 4.965-5.71zm-7.795 7.822c.287 0 3.518.01 7.106-1.014.223.435.433.87.63 1.303-3.957 1.258-7.234 3.99-7.464 4.186-.479-1.286-.757-2.678-.757-4.135 0-.115.005-.228.013-.34-.472-.001-.472 0-.472 0v-.004zm2.148 6.009c.2-.174 2.991-2.54 6.777-3.722 1.077 2.836 1.536 5.485 1.603 5.908-3.036 1.002-6.381.185-8.38-2.186zm10.158 3.504c-.073-.448-.521-2.979-1.564-5.733 2.453-.787 4.802-.731 4.945-.727-.373 2.684-2.131 4.954-4.482 6.069-.731.428-1.538.718-2.399.854.757-.134 1.488-.344 2.189-.643.435-.184.842-.407 1.221-.663.03-.021.06-.041.09-.06zm3.504-6.398c-.149-.004-2.261-.052-4.54.673-.207-.442-.426-.882-.656-1.319 2.502-.821 4.967-.745 5.196-.736v1.382z"/></svg>
+                  <span>DRIBBBLE</span>
+                </a>
+                <a href="https://www.instagram.com/its_jirou?igsi=aXR5N2J1bGV4dGdq" target="_blank" rel="noopener noreferrer" class="social-btn brutal-box" aria-label="J1rou on Instagram">
+                  <svg class="soc-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                  <span>INSTAGRAM</span>
+                </a>
+                <a href="https://www.facebook.com/Jeeru.green.bean/" target="_blank" rel="noopener noreferrer" class="social-btn brutal-box" aria-label="J1rou on Facebook">
+                  <svg class="soc-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                  <span>FACEBOOK</span>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-btn brutal-box" aria-label="Jay'l Gimenez Jr. on LinkedIn">
+                  <svg class="soc-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                  <span>LINKEDIN</span>
+                </a>
+                <a href="https://github.com/J1R0U" target="_blank" rel="noopener noreferrer" class="social-btn brutal-box" aria-label="J1rou on GitHub">
+                  <svg class="soc-icon-svg" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  <span>GITHUB</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Philippines Timezone Widget -->
+            <div class="timezone-widget brutal-box">
+              <div class="tz-left">
+                <span class="tz-label">PHILIPPINES TIME (PHT) • TANDAG & TAGO</span>
+                <div class="tz-clock" id="manilaClock">00:00:00 PM</div>
+              </div>
+              <div class="tz-right">
+                <span class="tz-status-dot"></span>
+                <span class="tz-status-text">ONLINE & CREATING</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- BRUTALIST FOOTER -->
+  <footer class="footer-wrapper">
+    
+    <!-- Giant Typography Watermark Banner -->
+    <div class="footer-giant-banner" aria-hidden="true">
+      <div class="marquee-track marquee-backward">
+        <div class="marquee-content giant-text">
+          <span>J1ROU // JAY'L GIMENEZ JR.</span>
+          <span>•</span>
+          <span>NO TEMPLATES ALLOWED</span>
+          <span>•</span>
+          <span>CRAFTING RAW IDENTITIES</span>
+          <span>•</span>
+          <span>J1ROU // JAY'L GIMENEZ JR.</span>
+          <span>•</span>
+          <span>NO TEMPLATES ALLOWED</span>
+          <span>•</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-container">
+      
+      <div class="footer-grid">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="footer-brand-col">
+          <div class="footer-logo">J1ROU</div>
+          <p class="footer-name">Jay'l Gimenez Jr. (J1rou)</p>
+          <p class="footer-bio">Graphic designer based in Tago, Surigao del Sur with workplace in Tandag City. Specialized in brand identities, UI/UX, editorial, and vector graphics.</p>
+          <div class="footer-badge brutal-box">⚡ 100% HAND-CRAFTED PIXELS</div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="footer-links-col">
+          <h5 class="footer-col-title">NAVIGATION</h5>
+          <ul class="footer-links-list">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#works">Selected Works</a></li>
+            <li><a href="#about">About & Resume</a></li>
+            <li><a href="#playground">Sticker Playground</a></li>
+            <li><a href="#contact">Inquiry Brief</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Quick Utilities & Actions -->
+        <div class="footer-utils-col">
+          <h5 class="footer-col-title">CONTROLS</h5>
+          <div class="footer-controls-stack">
+            <button type="button" class="btn-brutal btn-full" id="footerThemeToggle">
+              <span>SWITCH PALETTE 🎨</span>
+            </button>
+            <button type="button" class="btn-brutal btn-full" id="footerSoundToggle">
+              <span>SOUND FX: <strong id="footerSoundState">ON 🔊</strong></span>
+            </button>
+            <button type="button" class="btn-brutal btn-full btn-primary" id="backToTopBtn">
+              <span>BACK TO TOP 🚀</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p class="copyright">© 2026 <strong>Jay'l Gimenez Jr. (J1rou)</strong>. All Rights Reserved. Built with zero boring templates.</p>
+        <div class="footer-tags">
+          <span>HTML5</span> • <span>CSS3</span> • <span>WEB AUDIO</span> • <span>CANVAS ENGINE</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Confetti Canvas for Inquiry Success Burst -->
+  <canvas id="confettiCanvas" class="confetti-canvas" aria-hidden="true"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>

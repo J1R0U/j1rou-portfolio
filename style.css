@@ -2011,6 +2011,68 @@ mark.highlight-cyan { background-color: var(--accent-cyan); color: #000; }
   color: var(--text-muted);
 }
 
+/* Featured Single Testimony Styling */
+.testimony-single-wrapper {
+  max-width: 860px;
+  margin: 0 auto;
+}
+.testimony-featured {
+  padding: 40px;
+  background: var(--card-bg);
+  position: relative;
+}
+.t-badge-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.badge-role {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  background: var(--accent-yellow);
+  color: #000;
+  letter-spacing: 0.05em;
+}
+.featured-quote {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  font-family: var(--font-subdisplay);
+  font-weight: 600;
+  font-style: normal;
+  color: var(--text-main);
+  margin: 0 0 32px 0;
+  padding: 0;
+  border: none;
+}
+.featured-author {
+  padding-top: 24px;
+  border-top: 3px solid var(--border-color);
+}
+.featured-author .t-avatar {
+  width: 56px;
+  height: 56px;
+  font-size: 1.6rem;
+  border: var(--border-width) solid #000;
+}
+.author-name {
+  font-size: 1.15rem;
+  font-family: var(--font-display);
+  letter-spacing: 0.04em;
+  display: block;
+}
+.author-title {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  display: block;
+  margin-top: 4px;
+}
+
 /* --- CONTACT SECTION --- */
 .contact-section {
   padding: 80px 0;

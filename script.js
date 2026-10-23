@@ -12,110 +12,30 @@ document.addEventListener('DOMContentLoaded', () => {
   class SoundEngine {
     constructor() {
       this.audioCtx = null;
-      this.enabled = localStorage.getItem('j1rou_sound_enabled') !== 'false';
-      this.initContext();
+      this.enabled = false;
     }
 
-    initContext() {
-      if (!this.audioCtx && (window.AudioContext || window.webkitAudioContext)) {
-        const AudioContextClass = window.AudioContext || window.webkitAudioContext;
-        this.audioCtx = new AudioContextClass();
-      }
-    }
+    initContext() {}
 
-    playTone(freq, type = 'square', duration = 0.08, gainVal = 0.1) {
-      if (!this.enabled) return;
-      try {
-        if (!this.audioCtx) this.initContext();
-        if (this.audioCtx.state === 'suspended') {
-          this.audioCtx.resume();
-        }
+    playTone() {}
 
-        const osc = this.audioCtx.createOscillator();
-        const gain = this.audioCtx.createGain();
+    click() {}
 
-        osc.type = type;
-        osc.frequency.setValueAtTime(freq, this.audioCtx.currentTime);
+    pop() {}
 
-        gain.gain.setValueAtTime(gainVal, this.audioCtx.currentTime);
-        gain.gain.exponentialRampToValueAtTime(0.0001, this.audioCtx.currentTime + duration);
+    stamp() {}
 
-        osc.connect(gain);
-        gain.connect(this.audioCtx.destination);
-
-        osc.start();
-        osc.stop(this.audioCtx.currentTime + duration);
-      } catch (e) {
-        // Audio fallback
-      }
-    }
-
-    click() {
-      this.playTone(600, 'square', 0.05, 0.08);
-    }
-
-    pop() {
-      this.playTone(880, 'triangle', 0.09, 0.12);
-    }
-
-    stamp() {
-      this.playTone(220, 'sawtooth', 0.12, 0.15);
-    }
-
-    success() {
-      if (!this.enabled) return;
-      const notes = [523.25, 659.25, 783.99, 1046.50]; // C5, E5, G5, C6
-      notes.forEach((freq, idx) => {
-        setTimeout(() => {
-          this.playTone(freq, 'sine', 0.18, 0.15);
-        }, idx * 75);
-      });
-    }
+    success() {}
 
     toggle() {
-      this.enabled = !this.enabled;
-      localStorage.setItem('j1rou_sound_enabled', this.enabled);
-      return this.enabled;
+      return false;
     }
   }
 
   const sounds = new SoundEngine();
 
-  // Attach sounds to standard brutalist buttons & links
-  document.querySelectorAll('.btn-brutal, .filter-btn, .like-btn, .social-btn, .theme-opt, .nav-link').forEach(elem => {
-    elem.addEventListener('click', () => sounds.click());
-  });
-
-  // Sound Toggle Buttons
-  const soundToggle = document.getElementById('soundToggle');
-  const soundIcon = document.getElementById('soundIcon');
-  const footerSoundToggle = document.getElementById('footerSoundToggle');
-  const footerSoundState = document.getElementById('footerSoundState');
-
-  function updateSoundUI(isEnabled) {
-    if (soundIcon) soundIcon.textContent = isEnabled ? '🔊' : '🔇';
-    if (footerSoundState) footerSoundState.innerHTML = isEnabled ? 'ON 🔊' : 'MUTED 🔇';
-    const tooltip = soundToggle ? soundToggle.querySelector('.btn-tooltip') : null;
-    if (tooltip) tooltip.textContent = isEnabled ? 'SOUND ON' : 'SOUND OFF';
-  }
-
-  updateSoundUI(sounds.enabled);
-
-  if (soundToggle) {
-    soundToggle.addEventListener('click', () => {
-      const state = sounds.toggle();
-      updateSoundUI(state);
-      showToast(state ? 'Sound FX Enabled 🔊' : 'Sound FX Muted 🔇', 'info');
-    });
-  }
-
-  if (footerSoundToggle) {
-    footerSoundToggle.addEventListener('click', () => {
-      const state = sounds.toggle();
-      updateSoundUI(state);
-      showToast(state ? 'Sound FX Enabled 🔊' : 'Sound FX Muted 🔇', 'info');
-    });
-  }
+  // Sound toggle elements removed from UI
+  function updateSoundUI() {}
 
   /* ==========================================================================
      2. TOAST NOTIFICATION SYSTEM

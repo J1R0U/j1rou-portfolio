@@ -470,9 +470,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Trigger buttons
   document.querySelectorAll('.btn-view-case, .btn-text-action').forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', (e) => {
       const projectId = btn.getAttribute('data-project');
-      openCaseStudy(projectId);
+      if (projectId) {
+        e.preventDefault();
+        openCaseStudy(projectId);
+      }
     });
   });
 
